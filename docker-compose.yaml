@@ -1,0 +1,14 @@
+services:
+  openedge-v11:
+    build: ./v11
+    platform: linux/amd64
+    container_name: openedge-v11
+    volumes:
+    - /tmp/convert:/tmp
+  openedge-v12:
+    build: ./v12
+    platform: linux/amd64
+    container_name: openedge-v12
+    volumes:
+    - /tmp/convert:/tmp
+
