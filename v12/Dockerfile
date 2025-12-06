@@ -13,6 +13,6 @@ COPY ./convert.sh /usr/bin/
 RUN chmod +x /usr/bin/convert.sh
 COPY ./ActivationFile.txt /install/openedge/
 RUN /install/openedge/proinst -b /install/openedge/response.ini -l /tmp/openedge_install.log
-RUN rm -rf /install/
+# RUN rm -rf /install/
 CMD [ "tail", "-f", "/dev/null" ]
 
