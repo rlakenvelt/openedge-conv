@@ -1,0 +1,7 @@
+services:
+  openedge-v12:
+    build: .
+    container_name: openedge-v12
+    volumes:
+    - /mnt/data2/restore:/tmp
+

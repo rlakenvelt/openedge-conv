@@ -1,0 +1,7 @@
+services:
+  openedge-v11:
+    build: .
+    container_name: openedge-v11
+    volumes:
+    - /mnt/data2/restore:/mnt/data2/restore
+

@@ -1,0 +1,12 @@
+services:
+  openedge-v11:
+    build: ./v11
+    container_name: openedge-v11
+    volumes:
+    - /mnt/data2/restore:/tmp
+  openedge-v12:
+    build: ./v12
+    container_name: openedge-v12
+    volumes:
+    - /mnt/data2/restore:/tmp
+
